@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #F8FAFC;
+    color: #0F172A;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle hatched pattern for recess / non-teaching slots */
+.bg-recess-hatch {
+  background-color: #F1F5F9;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(148, 163, 184, 0.16),
+    rgba(148, 163, 184, 0.16) 4px,
+    transparent 4px,
+    transparent 10px
+  );
+}
+
+.bg-midday-hatch {
+  background-color: #F8FAFC;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(203, 213, 225, 0.2),
+    rgba(203, 213, 225, 0.2) 3px,
+    transparent 3px,
+    transparent 9px
+  );
+}

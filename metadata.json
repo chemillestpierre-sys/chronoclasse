@@ -1,0 +1,6 @@
+{
+  "name": "ChronoClasse",
+  "description": "Concepteur d'emploi du temps scolaire réglementaire (Cycles 1, 2 et 3) conforme aux prescriptions BOEN et SYNADEC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
